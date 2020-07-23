@@ -2,7 +2,7 @@
   "name": "curriculum-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mauriliomorais.github.io/curriculum-react/",
+  "homepage": "http://www.curriculo.maurilio.dev.br/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
