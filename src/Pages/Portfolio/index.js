@@ -89,7 +89,7 @@ export default function Portfolio() {
                         </div>
 
                      <div className="ospra">
-                        <a href="https://github.com/MaurilioMorais"><FaGithub size={30} color="EFEFEF" /></a>
+                        <a href="https://github.com/MaurilioMorais/portfolio-react"><FaGithub size={30} color="EFEFEF" /></a>
                         <a href="http://maurilio.dev.br/"><FaLink size={30} color="EFEFEF" /></a>
                      </div>
                     </div>
