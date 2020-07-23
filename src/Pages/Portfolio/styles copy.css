@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+}
+
+.container ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
+
+.page-container{
+    width: 100%;
+    max-width: 1500px;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.page-container ul{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:rgba(255,255,255,.3);
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+    
+}
+
+.page-container ul li{
+    list-style: none;
+}
+
+.page-container ul h1{
+    font: 700 32px Nanum Gothic Coding;
+    margin-bottom: 15px;
+    color: #EFEFEF;
+}
+
+.page-container ul h2{
+    font: 400 20px Nanum Gothic Coding;
+    margin-bottom: 15px;
+    color: #EFEFEF;
+}
+
+.portfolio-container {
+    width: 100%;
+    max-width: 1500px;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-container h1{
+    font: 700 32px Nanum Gothic Coding;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #EFEFEF;
+}
+.portfolio-container h2{
+    font: 400 20px Nanum Gothic Coding;
+    margin-bottom: 15px;
+    color: #EFEFEF;
+}
+
+.portfolio-container ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+    list-style: none;
+
+}
+
+.portfolio-container ul li{
+    display: flex;
+    flex-direction: column;
+    background:rgba(255,255,255,.3);
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-container ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+}
+.skills-container h1{
+    font: 700 32px Nanum Gothic Coding;
+    margin-bottom: 0px;
+    color: #EFEFEF;
+}
+
+.skills-container ul h2{
+    font: 400 20px Nanum Gothic Coding;
+    margin-bottom: 15px;
+    color: #EFEFEF;
+}
+.skills-container ul li{
+    display: flex;
+    flex-direction: column;
+    background:rgba(255,255,255,.3);
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.skills-container ul li h2{
+    font: 400 15px Nanum Gothic Coding;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    color: #EFEFEF;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.bio-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.bio-container h1{
+    font: 700 32px Nanum Gothic Coding;
+    margin-bottom: 5px;
+    color: #EFEFEF;
+}
+
+.bio-container h2{
+    font: 400 20px Nanum Gothic Coding;
+    margin-bottom: 5px;
+    color: #EFEFEF;
+    text-align: center;
+    max-width: 600px;
+}
+
+.progress-bars {
+    position: relative;
+    width: 300px;
+    height: 15px;
+    background-color: #efefef;
+    border-radius: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.progress-bars::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 60%;
+    min-width: 3rem;
+    max-width: calc(100% - .1.5rem);
+    background-color:#5599FF;
+    border-radius: 1.5em;
+}
+
+.progress-barJava {
+    position: relative;
+    width: 300px;
+    height: 15px;
+    background-color: #efefef;
+    border-radius: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.progress-barJava::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 40%;
+    min-width: 3rem;
+    max-width: calc(100% - .1.5rem);
+    background-color:#5599FF;
+    border-radius: 1.5em;
+}
+
+.progress-barC {
+    position: relative;
+    width: 300px;
+    height: 15px;
+    background-color: #efefef;
+    border-radius: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.progress-barC::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    min-width: 3rem;
+    max-width: calc(100% - .1.5rem);
+    background-color:#5599FF;
+    border-radius: 1.5em;
+}
+
+.progress-barNodeJs {
+    position: relative;
+    width: 300px;
+    height: 15px;
+    background-color: #efefef;
+    border-radius: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.progress-barNodeJs::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 40%;
+    min-width: 3rem;
+    max-width: calc(100% - .1.5rem);
+    background-color:#5599FF;
+    border-radius: 1.5em;
+}
+
+.progress-barReactJs {
+    position: relative;
+    width: 300px;
+    height: 15px;
+    background-color: #efefef;
+    border-radius: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.progress-barReactJs::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    min-width: 3rem;
+    max-width: calc(100% - .1.5rem);
+    background-color:#FFC700;
+    border-radius: 1.5em;
+}
+
+.progress-barReactNative {
+    position: relative;
+    width: 300px;
+    height: 15px;
+    background-color: #efefef;
+    border-radius: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.progress-barReactNative::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 25%;
+    min-width: 3rem;
+    max-width: calc(100% - .1.5rem);
+    background-color:#FFC700;
+    border-radius: 1.5em;
+}
+
+.progress-barElectron {
+    position: relative;
+    width: 300px;
+    height: 15px;
+    background-color: #efefef;
+    border-radius: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.progress-barElectron::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 40%;
+    min-width: 3rem;
+    max-width: calc(100% - .1.5rem);
+    background-color:#FFC700;
+    border-radius: 1.5em;
+}
+
+.progress-barOthers {
+    position: relative;
+    width: 300px;
+    height: 15px;
+    background-color: #efefef;
+    border-radius: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.progress-barOthers::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 40%;
+    min-width: 3rem;
+    max-width: calc(100% - .1.5rem);
+    background-color:#6DDA00;
+    border-radius: 1.5em;
+}
+
+.progress-barExpress {
+    position: relative;
+    width: 300px;
+    height: 15px;
+    background-color: #efefef;
+    border-radius: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.progress-barExpress::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30%;
+    min-width: 3rem;
+    max-width: calc(100% - .1.5rem);
+    background-color:#FFC700;
+    border-radius: 1.5em;
+
+}
+
+.progress-barCSS {
+    position: relative;
+    width: 300px;
+    height: 15px;
+    background-color: #efefef;
+    border-radius: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.progress-barCSS::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 45%;
+    min-width: 3rem;
+    max-width: calc(100% - .1.5rem);
+    background-color:#5599FF;
+    border-radius: 1.5em;
+
+}
+
+.progress-barFront {
+    position: relative;
+    width: 300px;
+    height: 15px;
+    background-color: #efefef;
+    border-radius: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.progress-barFront::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    min-width: 3rem;
+    max-width: calc(100% - .1.5rem);
+    background-color:#6DDA00;
+    border-radius: 1.5em;
+}
+
+.progress-barBack {
+    position: relative;
+    width: 300px;
+    height: 15px;
+    background-color: #efefef;
+    border-radius: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.progress-barBack::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 45%;
+    min-width: 3rem;
+    max-width: calc(100% - .1.5rem);
+    background-color:#6DDA00;
+    border-radius: 1.5em;
+}
+
+.progress-barMobile {
+    position: relative;
+    width: 300px;
+    height: 15px;
+    background-color: #efefef;
+    border-radius: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.progress-barMobile::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 20%;
+    min-width: 3rem;
+    max-width: calc(100% - .1.5rem);
+    background-color:#6DDA00;
+    border-radius: 1.5em;
+}
+
+.progress-barUI {
+    position: relative;
+    width: 300px;
+    height: 15px;
+    background-color: #efefef;
+    border-radius: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.progress-barUI::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30%;
+    min-width: 3rem;
+    max-width: calc(100% - .1.5rem);
+    background-color:#6DDA00;
+    border-radius: 1.5em;
+}
+
+.progress-barEnglish {
+    position: relative;
+    width: 300px;
+    height: 15px;
+    background-color: #efefef;
+    border-radius: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.progress-barEnglish::before {
+    content: '';
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 35%;
+    min-width: 3rem;
+    max-width: calc(100% - .1.5rem);
+    background-color:#6DDA00;
+    border-radius: 1.5em;
+}
+
+.progress-bar li {
+    position: relative;
+    list-style: none;
+    margin: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.progress-bar li::before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: rgba(54,126,223, .5);
+    border-radius: 1000px;
+       background:rgba(255,255,255,0.1);
+}
+
+.progress-bar li::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 15px;
+    background-color: rgba(54,126,223, 1);
+    border-radius: 1000px;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.progress-bar li.javascript:after{
+    animation-name: javascript;
+}
+
+@keyframes javascript {
+    to { width: 80%;}
+}
+
+.progress-bar li.java:after{
+    animation-name: java;
+}
+
+@keyframes java {
+    to { width: 30%;}
+}
+
+.progress-barTeste{
+    position: relative;
+    list-style: none;
+    margin: 0px;
+}
+
+.progress-barTeste::before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: rgba(54,126,223, .5);
+    border-radius: 1000px;
+       background:rgba(255,255,255,0.1);
+}
+
+.progress-barTeste::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 15px;
+    background-color: rgba(54,126,223, 1);
+    border-radius: 1000px;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.progress-barTeste:after{
+    animation-name: teste;
+}
+
+@keyframes teste {
+    to { width: 50%;}
+}
