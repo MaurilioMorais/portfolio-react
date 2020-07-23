@@ -1,10 +1,12 @@
 import React from 'react';
+import {FaWhatsapp, FaTelegram, FaLinkedin, FaGithub, FaLink} from 'react-icons/fa';
 
 import './styles.css';
 
-import heroesImg from '../../assets/heroes.png';
 import reactImg from '../../assets/react.png';
 import photoImg from '../../assets/Photo.png';
+import Port from '../../assets/React-Portfolio.png';
+
 
 export default function Portfolio() {
     return(
@@ -16,10 +18,10 @@ export default function Portfolio() {
                          <h1>Maurilio Morais</h1>
                          <h2>React/React Native | Electron | Java | C | JavaScript | NodeJs | SqLite</h2>
                         <li>
-                             <button type="button">WPP</button>
-                              <button type="button">TLG</button>
-                              <button type="button">GIT</button>
-                              <button type="button">LKD</button>
+                            <a href="https://api.whatsapp.com/send?phone=5535992012025"><FaWhatsapp size={30} color="EFEFEF" /></a>
+                            <a href="https://t.me/maurilio_morais"><FaTelegram size={30} color="EFEFEF" /></a>
+                            <a href="https://www.linkedin.com/in/mauriliomorais/"><FaLinkedin size={30} color="EFEFEF" /></a>
+                            <a href="https://github.com/MaurilioMorais"><FaGithub size={30} color="EFEFEF" /></a>
                         </li>
                     
                      </ul>
@@ -79,23 +81,22 @@ export default function Portfolio() {
             <h1>Projects</h1>
             <ul>
                 <li>
-                    <img src={reactImg} alt="react" />
-                    <strong>React Project</strong>
-                    <p>Portfolio in React</p>
-                    <button type="button">follow</button>
+                    <img src={Port} alt="portfolio" />
+                    <div className="project-links">
+                        <div className="aoba">
+                        <strong>Projeto Portfólio</strong>
+                        <p>ReactJs + CSS</p>
+                        </div>
+
+                     <div className="ospra">
+                        <a href="https://github.com/MaurilioMorais"><FaGithub size={30} color="EFEFEF" /></a>
+                        <a href="http://maurilio.dev.br/"><FaLink size={30} color="EFEFEF" /></a>
+                     </div>
+                    </div>
+                    
+                    
+                    
                 </li>
-                <li>
-                    <img src={reactImg} alt="react" />
-                    <strong>React Native Project</strong>
-                    <p>Reat Native App</p>
-                    <button type="button">follow</button>
-                </li>
-                <li>
-                    <img src={reactImg} alt="react" />
-                    <strong>Electron Project</strong>
-                        <p>Electron</p>
-                        <button type="button">follow</button>
-                    </li>
             </ul>
         </div>
     </ul>
